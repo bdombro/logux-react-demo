@@ -1,0 +1,21 @@
+{
+  "name": "server-logux",
+  "version": "1.0.0",
+  "author": "Brian Dombrowski",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "start": "NODE_ENV=production node ./src/index.js",
+    "watch": "nodemon --watch ./src ./src/index.js"
+  },
+  "dependencies": {
+    "@logux/core": "~0.7.0",
+    "@logux/server": "~0.10.1",
+    "bcrypt": "~5.0.1",
+    "jwt-simple": "~0.5.6",
+    "nedb": "~1.8.0",
+    "nodemon": "^2.0.12"
+  }
+}
